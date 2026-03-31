@@ -25,17 +25,21 @@ O sistema deve processar as seguintes situações utilizando `if`, `else if` e `
 
 1.  **1 Situacao: Orçamento e Cronograma:**
     * O usuário insere o valor do repasse anual (em bilhões de reais).
-    * **Regra:** * Se o valor for menor que R$ 0.5 bi: Exibir "ALERTA: Risco de paralisação total. Data estimada: 2045".
+    * **Regra:**
+    * * Se o valor for menor que R$ 0.5 bi: Exibir "ALERTA: Risco de paralisação total. Data estimada: 2045".
         * Se o valor estiver entre R$ 0.5 bi e R$ 1.0 bi: Exibir "Ritmo lento: Finalização prevista para 2037".
         * Se o valor for maior que R$ 1.0 bi: Exibir "Projeto acelerado: Possibilidade de antecipação da entrega".
 
 2.  **2 Situacao: Protocolo de Acesso Internacional:**
     * O sistema recebe um nível de acesso (String) e um código de país (String).
-    * **Regra:** Se o nível for "TOTAL" e o país não for "Brasil", o sistema deve exibir "ACESSO NEGADO: Soberania Nacional preservada. Dados criptografados". Caso contrário, se for "Brasil", exibir "Acesso autorizado ao Almirantado".
+    * **Regra:**
+    * * Se o nível for "TOTAL" e o país não for "Brasil", o sistema deve exibir 
+    "ACESSO NEGADO: Soberania Nacional preservada. Dados criptografados". Caso contrário, se for "Brasil", exibir "Acesso autorizado ao Almirantado".
 
 3.  **3 Situacao: Propulsão (Simulação de Segurança):**
     * O sistema recebe a temperatura do reator nuclear (double).
-    * **Regra:** * Abaixo de 280°C: "Aumentar potência do reator".
+    * **Regra:**
+    * * Abaixo de 280°C: "Aumentar potência do reator".
         * Entre 280°C e 350°C: "Operação Normal - Cruzeiro".
         * Acima de 350°C: "EMERGÊNCIA: Acionar sistema de resfriamento e emergência".
 
